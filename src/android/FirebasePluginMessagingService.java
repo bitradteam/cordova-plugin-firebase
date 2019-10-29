@@ -87,7 +87,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
     } else {
       /*title = data.get("title");
       text = data.get("text");*/
-      title = data.get("header");
+      title = data.get("title");
       text = data.get("title");
       id = data.get("id");
       sound = data.get("sound");
