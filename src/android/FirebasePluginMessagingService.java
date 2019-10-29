@@ -81,10 +81,8 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
     Map<String, String> data = remoteMessage.getData();
     
     if (remoteMessage.getNotification() != null) {
-      /*title = remoteMessage.getNotification().getTitle();
-      text = remoteMessage.getNotification().getBody();*/
-      title = data.get("header");
-      text = remoteMessage.getNotification().getTitle();
+      title = remoteMessage.getNotification().getTitle();
+      text = remoteMessage.getNotification().getBody();
       id = remoteMessage.getMessageId();
     } else {
       /*title = data.get("title");
